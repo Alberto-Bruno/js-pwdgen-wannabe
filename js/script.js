@@ -9,8 +9,7 @@ console.log('JS OK');
 */
 
 // Prendo l'elemento dal DOM 
-const greetingElement = document.getElementById('greetings');
-console.log(greetingElement);
+const targetElement = document.getElementById('target');
 
 // Chiedo all'utente il suo nome
 const firstName = prompt('Il tuo nome?' , 'Albe');
@@ -25,8 +24,16 @@ const color = prompt('il tuo colore preferito?' , 'blue');
 console.log(color);
 
 
-// Scrivo sulla pagina il nomecognomecolorepreferito21
-greetingElement.innerText = greetingElement.innerText + ' ' + firstName + lastName + color;
+// Scrivo la password
+const password = firstName + lastName + color + '21';
+console.log(password);
+
+// Build content 
+const message = "La password è:" + password;
+
+// Inserisco nella pagina 
+targetElement.innerHTML = message;
+
 
 
 
