@@ -12,15 +12,15 @@ console.log('JS OK');
 const targetElement = document.getElementById('target');
 
 // Chiedo all'utente il suo nome
-const firstName = prompt('Il tuo nome?' , 'Albe');
+const firstName = prompt('Il tuo nome?', 'Albe');
 console.log(firstName);
 
 // Chiedo all'utente il suo cognome
-const lastName = prompt('Il tuo cognome?' , 'Brown');
+const lastName = prompt('Il tuo cognome?', 'Brown');
 console.log(lastName);
 
 // Chiedo il colore preferito
-const color = prompt('il tuo colore preferito?' , 'blue');
+const color = prompt('il tuo colore preferito?', 'blue');
 console.log(color);
 
 
@@ -29,7 +29,7 @@ const password = firstName + lastName + color + '21';
 console.log(password);
 
 // Build content 
-const message = "La password è:" + password;
+const message = `La password è: <strong>${password}</strong>`;
 
 // Inserisco nella pagina 
 targetElement.innerHTML = message;
